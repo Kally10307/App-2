@@ -1,0 +1,92 @@
+
+/* 日历 */
+
+#calendarPage{
+    position: absolute;
+    width: 100%;
+    min-height:100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color: #333;
+    display: block;
+    /*-webkit-transition: all .2s ease-in-out;*/
+    /*transition: all .2s ease-in-out;*/
+    /*-webkit-transform: translateX(-100%);*/
+    /*transform: translateX(-100%);*/
+}
+
+.calender{
+    padding:0 10px 20px;
+    font-family: Arial;
+    background: #fff;
+}
+.calender_wrapper{
+    margin-top: 10px;
+}
+
+.calender_wrapper h3{
+    text-align: center;
+    font-size:16px;
+    font-weight:400;
+    line-height:30px;
+}
+
+.calender_wrapper table{
+    width:100%;
+    border-collapse: collapse;
+}
+.calender_wrapper table tr{
+    height:48px;
+}
+.calender_wrapper table tr:first-child{
+    height:40px;
+    background-image: -webkit-linear-gradient(bottom, transparent 50%, #dcdcdc 50%);
+    background-image: linear-gradient(bottom, transparent 50%, #dcdcdc 50%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.calender_wrapper table .sunday, .calender_wrapper table .saturday{
+    color: #50b400;
+}
+
+.calender_wrapper table th{
+    width:14.2857143%;
+    color: #999;
+    font-weight: 400;
+}
+.calender_wrapper table tr:nth-child(2) td{
+    padding-top:2px;
+}
+.calender_wrapper table tr td{
+    text-align: center;
+    vertical-align: middle;
+    font-size:14px;
+    padding:0 2px;
+}
+.calender_wrapper table tr td div{
+    height:40px;
+    line-height:40px;
+}
+
+.calender_wrapper table .disabled, .calender_wrapper table .disabled div{
+    color: #ccc;
+}
+.calender_wrapper table .today div{
+    background: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+}
+
+.calender_wrapper table tr td span{
+    display: block;
+    padding-top:6px;
+    line-height: 14px;
+}
+.calender_wrapper table tr td p{
+    font-size: 12px;
+    line-height: 16px;
+    color: #50b400;
+}

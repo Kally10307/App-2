@@ -1,0 +1,113 @@
+<section class="order_header">
+    <p>
+        <span id="order_name"></span>
+        <span><em>¥</em><strong id="unit_price"></strong>&nbsp;/份</span>
+    </p>
+    <div class="clearfix">
+        <div class="order_left">
+            <h3>套餐份数</h3>
+            <p>本套餐最多适用2成人</p>
+        </div>
+        <p class="order_right clearfix">
+            <span class="disabled" id="reduce">-</span>
+            <span id="order_num">1</span>
+            <span id="plus">+</span>
+        </p>
+    </div>
+</section>
+<section class="order_block order_hotel">
+    <div>
+        <div>
+            <h3>天津维多利亚国际大酒店</h3>
+            <p><span id="room_type"></span><span><em  id="room_num">1</em>间*1晚</span></p>
+        </div>
+        <p id="order_date"></p>
+    </div>
+</section>
+<section class="order_block order_sce">
+    <div>
+        <div>
+            <h3>天津之眼-摩天轮</h3>
+            <p><span>成人票</span><span>2张</span></p>
+        </div>
+        <p>选择出游日期</p>
+    </div>
+</section>
+<!--出游人信息-->
+<div class="order_info">
+    <section class="order_name">
+        <label>
+            <span>出游人</span><input id="name" type="text" placeholder="出游人姓名" required/>
+        </label>
+        <label>
+            <span>手机号码</span><input id="tel_num" type="tel" placeholder="免费接受订单确认短信" required/>
+        </label>
+    </section>
+    <section class="order_name order_hide">
+        <label>
+            <span>出游人</span><input type="text" placeholder="出游人姓名"/>
+        </label>
+        <label>
+            <span>手机号码</span><input type="tel" placeholder="免费接受订单确认短信"/>
+        </label>
+    </section>
+    <p><span>新增出游人</span></p>
+</div>
+<!--出行保障-->
+<div class="order_guarantee">
+    <h3>出行保障</h3>
+    <section class="clearfix" id="acc_guarantee">
+        <span class="order_unchecked order_checked"></span>
+        <div>
+            <p>意外险：<strong>¥10</strong><em>× 2人</em></p>
+            <p>太平“游天下”周边自助游保险计划（智选型）</p>
+        </div>
+    </section>
+    <section class="clearfix" id="cancel_guarantee">
+        <span class="order_unchecked order_checked"></span>
+        <div>
+            <p>取消险：<strong>¥10</strong><em>× 2人</em></p>
+            <p>华泰境内有理由取消险</p>
+        </div>
+    </section>
+</div>
+<!--需要发票-->
+<div class="invoice">
+    <p>需要发票<span class="order_unchecked"></span></p>
+    <p class="server_agree"><span class="order_unchecked order_checked"></span>我同意<a>服务条款说明</a></p>
+</div>
+<!--前往支付-->
+<div class="clearfix" id="order_pay">
+    <div>订单总额：<strong>¥<span id="order_total"></span></strong><em></em></div>
+    <a href="javascript:;" id="order_submit">前往支付</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

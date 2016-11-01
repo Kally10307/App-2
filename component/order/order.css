@@ -1,0 +1,393 @@
+/* 套餐信息 */
+
+.order_header{
+    width: 5.8rem;
+    height: 1.88rem;
+    padding: 0 0.3rem;
+    background: #fff;
+    border-bottom:1px solid #dcdcdc;
+    margin-bottom: 0.4rem;
+    color: #333;
+    font-family: Arial;
+}
+.order_header>p{
+    display: block;
+    height:0.78rem;
+    width: 100%;
+    border-bottom:1px solid #dcdcdc;
+    line-height: 0.78rem;
+    position: relative;
+}
+.order_header>p span:nth-of-type(1){
+    font-size:14px;
+    font-weight:500;
+}
+.order_header>p span:nth-of-type(2){
+    display: block;
+    height:100%;
+    font-size:12px;
+    color: #8f8f8f;
+    position: absolute;
+    right:0.2rem;
+    top:0;
+}
+.order_header>p span:nth-of-type(2) em{
+    color:#f5ab30;
+}
+.order_header>p span:nth-of-type(2) strong{
+    color: #f5ab30;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+}
+
+.order_header>div{
+    padding-bottom: 0.16rem;
+}
+.order_header .order_left{
+    float: left;
+}
+.order_header .order_left h3{
+    line-height: 0.54rem;
+    font-size:14px;
+    color: #5b5b5b;
+}
+.order_header .order_left p{
+    font-size: 12px;
+    color: #f5ab30;
+    line-height: 0.42rem;
+}
+.order_header .order_right{
+    display: block;
+    float: right;
+    padding-top:0.38rem;
+}
+.order_header .order_right span{
+    display: inline-block;
+    line-height: 0.52rem;
+    border:1px solid #dcdcdc;
+    text-align: center;
+    float: left;
+}
+.order_header .order_right span:first-child, .order_header .order_right span:last-child{
+    width:0.52rem;
+    height:0.52rem;
+    color: #18c513;
+    font-size: 26px;
+    font-weight: bold;
+}
+.order_header .order_right span:first-child{
+    border-top-left-radius:0.12rem;
+    border-bottom-left-radius:0.12rem;
+    border-right: none;
+}
+.order_header .order_right span:last-child{
+    border-top-right-radius:0.12rem;
+    border-bottom-right-radius:0.12rem;
+    border-left: none;
+}
+.order_header .order_right span.disabled{
+    color: #dcdcdc;
+}
+.order_header .order_right span:nth-of-type(2){
+    width: 0.68rem;
+    height: 0.52rem;
+    color: #333;
+}
+
+/* 订单信息 */
+.order_block{
+    background-color: #fff;
+    background-position: 0.18rem 0.36rem;
+    background-repeat: no-repeat;
+    background-size: 0.52rem 0.52rem;
+    margin-bottom:0.3rem;
+    padding-top:0.2rem;
+    border-bottom:1px solid #dcdcdc;
+}
+.order_block>div{
+    margin-left:0.88rem;
+}
+.order_hotel{
+    background-image: url("../../images/1223698290_01_03.png");
+}
+.order_sce{
+    background-image: url("../../images/1223698290_01_06.png");
+}
+.order_block>div>div{
+    padding-bottom:0.16rem;
+    border-bottom: 1px solid #dcdcdc;
+    line-height:0.4rem;
+}
+.order_block>div>div>h3{
+    font-size:14px;
+}
+.order_block>div>div>p{
+    font-size: 12px;
+    color: #acacac;
+}
+.order_block>div>div>p span:nth-of-type(1){
+    margin-right:0.2rem;
+}
+.order_block>div>p{
+    line-height:0.8rem;
+    font-size: 12px;
+    position: relative;
+}
+.order_block>div>p:after{
+    display: block;
+    width:10px;
+    height:10px;
+    content: "";
+    border: 2px solid #dcdcdc;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: absolute;
+    top:0.3rem;
+    right:0.4rem;
+}
+
+/* 出游人信息 */
+.order_info .order_name{
+    width:100%;
+    margin-bottom: 0.3rem;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: left;
+    background-color: #fff;
+    font-size: 12px;
+}
+.order_info .order_name label{
+    display: block;
+    width:100%;
+    line-height: 0.88rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+.order_info .order_name label:last-child{
+    border-bottom:none;
+}
+.order_info .order_name label span{
+    display: inline-block;
+    padding-left:0.2rem;
+    width:20%;
+}
+.order_info .order_name label input{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    color: #dcdcdc;
+}
+.order_info .order_hide{
+    display: none;
+}
+.order_info p{
+    display: block;
+    padding: 0 0.2rem;
+    height:0.64rem;
+    margin-bottom:0.4rem;
+}
+.order_info p span{
+    display: block;
+    float: right;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-radius: 0.12rem;
+    background-color: #03bb01;
+    color: #fff;
+    padding: 0.08rem 0.24rem;
+    text-align: center;
+    font-size: 12px;
+}
+.order_info p span.disabled{
+    color: #333;
+    background-color: #fff;
+    border:1px solid #dcdcdc;
+}
+
+/* 出行保障 */
+.order_guarantee{
+    border-top:1px solid #dcdcdc;
+    border-bottom:1px solid #dcdcdc;
+    margin-bottom: 0.3rem;
+    background-color: #fff;
+}
+.order_guarantee h3{
+    padding:0 0.2rem;
+    font-size:14px;
+    line-height: 0.8rem;
+    font-weight: 500;
+}
+.order_guarantee section{
+    border-top:1px solid #dcdcdc;
+}
+
+/*.order_guarantee section span*/
+.order_unchecked{
+    float: left;
+    display: inline-block;
+    width: 16px;
+    height:16px;
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin: 0.32rem 0.24rem;
+    border-radius: 0.08rem;
+    position: relative;
+}
+.order_checked{
+    border:none;
+    color: #fff;
+    background-color: #03bb01;
+}
+.order_checked:after{
+    content: '';
+    display: block;
+    width:7px;
+    height:3px;
+    border:2px solid #fff;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: absolute;
+    top:4px;
+    left:4px;
+}
+.order_guarantee section div{
+    float: left;
+    display: inline-block;
+    margin-right:0.2rem;
+    font-size: 10px;
+    padding:0.12rem 0;
+    line-height:0.32rem;
+}
+.order_guarantee section div p strong{
+    color: #f5ab30;
+}
+.order_guarantee section div p em{
+    color: #dcdcdc;
+}
+
+/* 需要发票 */
+
+.invoice{
+    background-color: #fff;
+    margin-bottom: 1rem;
+    line-height: 0.8rem;
+    font-size: 14px;
+    padding:0 0.2rem;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+}
+.invoice p{
+    display: block;
+    line-height:0.8rem;
+}
+.invoice p:nth-of-type(1) span{
+    float: right;
+    margin: 0.24rem 0.2rem;
+}
+.invoice p:nth-of-type(2){
+    position: absolute;
+    top: 0.8rem;
+    left:0;
+    line-height: 0.96rem;
+    font-size: 12px;
+}
+.invoice p:nth-of-type(2) span{
+    margin-right:0.12rem;
+}
+.invoice p:nth-of-type(2) a{
+    color: #118dcb;
+}
+/* 订单支付 */
+#order_pay{
+    background-color: #fff;
+    font-size: 12px;
+    height:0.96rem;
+}
+#order_pay div{
+    width:4.4rem;
+    height:0.94rem;
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left:0.2rem;
+    border-top: 1px solid #dcdcdc;
+    line-height: 0.94rem;
+}
+#order_pay div strong{
+    padding:0 0.12rem;
+    color: #f5ab30;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+}
+#order_pay div em{
+    position: relative;
+}
+#order_pay div em:after{
+    content: '';
+    display: block;
+    width:10px;
+    height:10px;
+    border:2px solid #dcdcdc;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    position: absolute;
+    top:0.02rem;
+    left:0.04rem;
+}
+
+#order_submit{
+    float: right;
+    display: inline-block;
+    width:2rem;
+    height:0.96rem;
+    background-color: #03bb01;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 0.96rem;
+}
+
+/* 弹框组件 */
+
+.mask{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    left:0;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+.mask .dialog{
+    width:260px;
+    height:100px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.mask .dialog .content{
+    padding:16px 16px 0 16px;
+    font-size: 12px;
+    color: #333;
+}
+.mask .dialog .btn{
+    width:100%;
+    text-align: center;
+    background-color: #eee;
+    border-top: 1px solid #dcdcdc;
+    line-height: 40px;
+    color: #03bb01;
+    font-size: 14px;
+    position: absolute;
+    bottom:0;
+    left:0;
+}

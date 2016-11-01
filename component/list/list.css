@@ -1,0 +1,291 @@
+
+@charset "utf-8";
+html,body{
+    width:100%;
+    height:100%;
+}
+/*body{*/
+/*font-size: 12px;*/
+/*}*/
+.main{
+    width:100%;
+    height:100%;
+    position: relative;
+    font-size: 14px;
+    font-family: "宋体";
+    background-color: #e9ecf1;
+    color: #666;
+    overflow-x: hidden;
+}
+
+/* 搜索框 */
+.list_search{
+    width: 6.4rem;
+    height: 0.92rem;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #eeeeee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.list_search span{
+    display: block;
+}
+.list_search span:first-child{
+    width: 5.72rem;
+    height: 0.6rem;
+    margin: 0.16rem auto;
+    background-color: #fff;
+    border-radius: 0.12rem;
+    -webkit-border-radius: 0.12rem;
+}
+.list_search span:last-child{
+    width: 0.28rem;
+    height:0.28rem;
+    background: url("../../images/search.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    position: absolute;
+    left: 0.44rem;
+    top: 0.32rem;
+}
+
+
+/* 列表内容区 */
+#list_wrapper{
+    width: 100%;
+    margin: 0.94rem 0 1rem 0;
+    background-color: #fff;
+}
+#list_scroll{
+    /*position: absolute;*/
+    /*z-index: 1;*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+
+#list_wrapper ul{
+    width: 5.92rem;
+    padding: 0 0.24rem;
+}
+#list_wrapper li{
+    display: block;
+    width: 100%;
+    height: 1.9rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+#list_wrapper li a{
+    display: block;
+    width:100%;
+    height:1.56rem;
+    padding: 0.14rem 0 0.2rem 0;
+    color: #333333;
+    text-decoration: none;
+    font-family: "Microsoft Yahei";
+}
+#list_wrapper li a .list_img{
+    display: inline-block;
+    width: 1.56rem;
+    height: 100%;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    position: relative;
+}
+#list_wrapper li a .list_img img{
+    width:1.56rem;
+    height:1.56rem;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+}
+#list_wrapper li a .list_img p{
+    display: block;
+    width:100%;
+    height:0.28rem;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height:0.28rem;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+}
+/*#list_wrapper li a .list_img p span{*/
+
+/*}*/
+#list_wrapper li a .list_info{
+    display: inline-block;
+    width:4.12rem;
+    height:100%;
+    padding-left:0.24rem;
+}
+#list_wrapper li a .list_info p:nth-of-type(1){
+    display: -webkit-box;
+    width:100%;
+    height:0.8rem;
+    line-height:0.4rem;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    color: #666;
+}
+#list_wrapper li a .list_info p:nth-of-type(2){
+    display: block;
+    width:100%;
+    height:0.48rem;
+    line-height: 0.48rem;
+}
+#list_wrapper li a .list_info p:nth-of-type(2) strong{
+    color: #ff7243;
+    font-size:18px;
+    padding-right:0.04rem;
+}
+#list_wrapper li a .list_info p:nth-of-type(2) span{
+    color: #b5b5b5;
+    font-size:11px;
+    line-height: 0.6rem;
+}
+#list_wrapper li a .list_info p:nth-of-type(3){
+    display: block;
+    width: 100%;
+    height:0.28rem;
+    line-height: 0.28rem;
+    color: #b5b5b5;
+    font-size:11px;
+}
+#list_wrapper li a .list_info p:nth-of-type(3) span:first-child{
+    padding-right:0.28rem;
+}
+#list_wrapper .loading{
+    display: none;
+    width: 100%;
+    height: 0.4rem;
+    background: #fff;
+    text-align: center;
+    font-size:12px;
+    color:#666;
+    line-height:0.4rem;
+}
+
+
+/* 底部 */
+.list_footer{
+    width: 6.4rem;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    background-color: #353a41;
+    font-family: "Microsoft Yahei";
+}
+.list_footer li{
+    display: inline-block;
+    width: 25%;
+    height:100%;
+    float: left;
+    text-align: center;
+}
+.list_footer li span{
+    display: inline-block;
+    width: 100%;
+    height: 0.4rem;
+    padding-top: 0.6rem;
+    font-size: 12px;
+    line-height:0.4rem;
+    color: #bbb;
+}
+.list_footer li.tc_line span{
+    background: url("../../images/tc_line.png") center 0.2rem no-repeat;
+    background-size: 0.36rem 0.4rem;
+}
+.list_footer li.week_house span{
+    background: url("../../images/week_house.png") center 0.2rem no-repeat;
+    background-size: 0.34rem 0.4rem;
+}
+.list_footer li.order_by span{
+    background: url("../../images/order_by.png") center 0.2rem no-repeat;
+    background-size: 0.36rem 0.4rem;
+}
+.list_footer li.select span{
+    background: url("../../images/select.png") center 0.2rem no-repeat;
+    background-size: 0.36rem 0.4rem;
+}
+
+/* 排序 */
+.normal_content{
+    display: none;
+    width:100%;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    font-family:"Microsoft Yahei";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 110;
+    -webkit-transition: height linear 0.3s;
+    transition: height linear 0.3s;
+}
+.normal_content li{
+    height: 0.88rem;
+    line-height:0.88rem;
+    padding: 0 0.4rem;
+    border-bottom: 1px solid #DEDEDE;
+}
+.normal_content li.select{
+    border-bottom: none;
+}
+.normal_content li.active{
+    background: url("../../images/sure.png") 96% 0.3rem no-repeat;
+    background-size: 0.36rem 0.26rem;
+    color:#50b400;
+}
+
+/* 遮罩 */
+.overlys{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+    display: none;
+    -webkit-transition: height linear 0.3s;
+    transition: height linear 0.3s;
+}
+
+
+/* 电话 */
+.call{
+    width:0.9rem;
+    height: 0.9rem;
+    position: fixed;
+    bottom: 2.6rem;
+    right: 0.4rem;
+    background: url("../../images/icon-tel.6d9bdc5e.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    z-index: 99;
+}

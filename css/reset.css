@@ -1,0 +1,10 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,pre, a, label, tbody, tfoot, thead, form, fieldset, iframe, input, img, p, blockquote, table, th, td, embed, object,
+i, article, aside, nav, time, hr, span, figure, figcaption{ padding: 0; margin: 0; border: 0; outline: 0;}
+ul, dl, ol{ list-style: none;}
+table{ border-collapse: collapse; border-spacing: 0;}
+h1, h2, h3, h4, h5, h6, address, caption, cite, code, em, strong, th{ font-weight: normal; font-style: normal; }
+a, input{ outline: none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+a:hover,a:active,a:focus{outline:none}
+/*.clearfix{}*/
+.clearfix:before, .clearfix:after{ display: block; content:"";}
+.clearfix:after{ clear: both;}

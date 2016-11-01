@@ -1,0 +1,471 @@
+/* 幻灯片 */
+.detail_swiper{
+    width: 100%;
+    height:3.4rem;
+    position: relative;
+}
+.detail_swiper .swiper-container{
+    width: 100%;
+    height:100%;
+}
+.detail_swiper .swiper-slide img{
+    height: 100%;
+}
+.detail_swiper label{
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    bottom:5px;
+    background: url("../../images/ico_1.png") no-repeat 0 3px;
+    padding-left:20px;
+    display: block;
+    background-size: 16px 12px;
+    color: #fff;
+    z-index: 2;
+}
+
+/* 头部标题 */
+.detail_header{
+    width:100%;
+    background-color: #fff;
+    margin-bottom:10px;
+    font-family: "Microsoft Yahei";
+}
+.detail_header_box{
+    min-height:42px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.detail_header h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #666;
+}
+.detail_header p{
+    display: block;
+    font-size: 12px;
+    color:#999;
+    position: relative;
+}
+.detail_header p span:nth-of-type(1){
+    color: #ff6633;
+}
+.detail_header p strong{
+    font-size: 22px;
+    color: #ff6633;
+    padding-right:5px;
+    line-height: 33px;
+}
+.detail_header p span:nth-of-type(2){
+    position: absolute;
+    top: 10px;
+    right:10px;
+}
+/* 点评 */
+.detail_discuss{
+    margin:0;
+    padding: 10px 15px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    color: #999;
+    position: relative;
+    background: url("../../images/ico_2.png") #fff no-repeat 10px 12px;
+    background-size: 15px 16px;
+}
+.detail_discuss label{
+    padding-left:15px;
+    color: #333;
+    font-size: 16px;
+}
+.detail_discuss label span{
+    color: #999;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+}
+.detail_discuss strong{
+    color: #03bc01;
+    font-weight: 500;
+}
+.detail_discuss .satisfaction{
+    float: right;
+    padding-right:20px;
+    line-height: 22px;
+    font-family: "Microsoft Yahei";
+}
+.detail_discuss:after{
+    content: '';
+    position: absolute;
+    top:15px;
+    right:15px;
+    display: block;
+    width:10px;
+    height:10px;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+/* 点评展示区 */
+.discuss_box{
+    padding:15px;
+    background: #f6f8fb;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.discuss_box h3{
+    font-size: 14px;
+    color: #999;
+    font-weight:bold;
+}
+.discuss_box .discuss_text p{
+    color: #666;
+    margin: 10px 0;
+    height: 60px;
+    line-height:20px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp:2;
+    line-clamp:2;
+}
+.discuss_box .discuss_text li{
+    float: left;
+    width:23%;
+    margin:0 1%;
+    height:77px;
+    overflow: hidden;
+}
+
+/* 精选 */
+.detail_spc_list .list_header{
+    background: url("../../images/ico_self.png") #fff 5px center no-repeat;
+    background-size: 15px 15px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding:10px 15px 10px 25px;
+    margin:0;
+    height: 24px;
+    line-height: 24px;
+}
+.detail_spc_list .list_header label{
+    color: #333;
+    font-size: 16px;
+}
+.detail_spc_list ul{
+    padding:0 15px;
+    overflow: hidden;
+    display: block;
+    background-color: #F6F8FB;
+}
+.detail_spc_list ul li{
+    border-bottom:1px solid #dcdcdc;
+    padding:15px 0;
+    display: block;
+}
+.detail_spc_list ul li:last-child{
+    border-bottom:none;
+}
+.detail_spc_list ul li.detail_list_hide{
+    display: none;
+}
+.detail_spc_list ul li h3{
+    font-size: 14px;
+    /*font-weight: 500;*/
+    color: #666;
+    display: block;
+    padding-bottom:10px;
+    position: relative;
+    padding-right:80px;
+}
+.detail_spc_list ul li p{
+    display: block;
+    padding-left: 25px;
+    line-height: 20px;
+    margin: 5px 0 10px 0;
+    background: url("../../images/icon-hotel.png") 0 0 no-repeat;
+    background-size: 16px 16px;
+    color: #999;
+    font-size: 12px;
+}
+.detail_spc_list ul li p span{
+    margin:0 15px 0 5px;
+    color: #ccc;
+}
+.detail_spc_list ul li div{
+    position: relative;
+    height:36px;
+}
+.detail_spc_list ul li div span{
+    font-size: 12px;
+    color: #666;
+}
+.detail_spc_list ul li div span em{
+    color: #ff6633;
+    font-family: "Microsoft Yahei";
+}
+.detail_spc_list ul li div span strong{
+    color: #ff6633;
+    font-size: 18px;
+    margin-right:3px;
+    font-family: "Microsoft Yahei";
+}
+.detail_spc_list ul li div .order_btn{
+    display: block;
+    position: absolute;
+    right:5px;
+    bottom:0;
+    min-width:90px;
+    padding:0 5px;
+    height:36px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background: #09bb07;
+    line-height:36px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.detail_hotel_show a{
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    height:45px;
+    line-height:45px;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    color: #666;
+    text-decoration: none;
+    background: #F6F8FB;
+}
+.detail_hotel_show a:after{
+    content: '';
+    position: absolute;
+    top:15px;
+    right:35%;
+    display: block;
+    width:10px;
+    height:10px;
+    border-left:2px solid #ccc;
+    border-top:2px solid #ccc;
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+}
+.detail_hotel_hide a:after{
+    top:18px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* 产品详情 */
+.detail_product{
+    margin-top: 15px;
+    background-color: #F6F8FB;
+}
+.detail_product .product_tab{
+    height:40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background-color: #fff;
+    border-bottom:1px solid #dcdcdc;
+}
+.detail_product .product_tab li{
+    display: inline-block;
+    float: left;
+    width:33.3%;
+}
+.detail_product .product_tab li a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    line-height: 37px;
+    text-align: center;
+    /*font-family: "Microsoft Yahei";*/
+    /*margin-bottom: -3px;*/
+}
+.detail_product .product_tab li.active a{
+    border-bottom: 3px solid #77c439;
+}
+.detail_product .detail_content{
+    display: none;
+    padding:15px;
+}
+.detail_product .panel_active{
+    display: block;
+}
+.detail_product .product_info div{
+    margin-top:5px;
+    border-left:6px solid #ff5626;
+    padding:5px;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Microsoft Yahei";
+}
+.detail_product .product_info div span:first-child{
+    font-size: 20px;
+    color: #969697;
+}
+.detail_product .product_info div span:last-child{
+    font-size: 16px;
+    color: #ff5626;
+    font-weight: bold;
+}
+.detail_product .product_info .product_tip{
+    font-size: 14px;
+    color: #714a44;
+    line-height: 20px;
+    font-family: "Microsoft Yahei";
+    border:none;
+    padding:0;
+}
+.detail_product .product_info .product_btn{
+    display: inline-block;
+    margin: 2px 0;
+    padding:5px 15px;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    background: #ff664c;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Microsoft Yahei";
+}
+.detail_product .product_info .detail_hr{
+    height:2px;
+    border-style:groove none none;
+    border-top-width:2px;
+    border-top-color: rgb(255,218,185);
+}
+.detail_product .product_info h2{
+    color: #333;
+    padding:20px 0 10px;
+    margin-top:0;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.detail_product .product_info h3{
+    color: #333;
+    margin:15px 0 10px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+}
+.detail_product .product_info p{
+    border:1px dashed rgb(230,38,39);
+    padding:10px;
+    font-family: "Microsoft Yahei";
+    border-radius: 8px;
+}
+.detail_product .product_info p span{
+    color: rgb(51,51,51);
+    font-family: "arial";
+    line-height:24px;
+    text-indent: 28px;
+    background-color: #fff;
+}
+.detail_product .product_info figure{
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+.detail_product .product_info figure img{
+    display: block;
+    width:100%;
+    height:auto;
+    min-height:150px;
+}
+.detail_product .product_info figure figcaption{
+    padding:0;
+    height:30px;
+    line-height:30px;
+    font-size: 14px;
+    overflow: hidden;
+}
+/* 地图 */
+.detail_product .map_list li{
+    padding:15px 0;
+    border-bottom:1px solid #dcdcdc;
+    position: relative;
+}
+.detail_product .map_list li h3{
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    padding:0 25px;
+    font-weight:bold;
+}
+.detail_product .map_list li h3:after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    right:15px;
+    display: block;
+    width:10px;
+    height:10px;
+    border-left:2px solid #ccc;
+    border-top:2px solid #ccc;
+    -webkit-transform:rotate(135deg);
+    transform:rotate(135deg);
+}
+.detail_product .map_list li.hotel h3{
+    background: url("../../images/icon-hotel.png") 0 0 no-repeat;
+    background-size: 16px 16px;
+}
+.detail_product .map_list li.scenery h3{
+    background: url("../../images/icon-scenery.png") 0 0 no-repeat;
+    background-size: 16px 16px;
+}
+.detail_product .map_list li h3 p{
+    color: #999;
+    font-weight:500;
+}
+.detail_product #map_content{
+    position: relative;
+    z-index: 0;
+    color: #000;
+    text-align: left;
+    background-color: rgb(243,241,236);
+    height:150px;
+    margin-top:15px;
+}
+#allmap{height:150px;width:100%;}
+
+/* 预订须知 */
+.detail_product .item_yuding{
+    border-bottom: 1px solid #dcdcdc;
+}
+.detail_product .order_discount h3{
+    font-weight:bold;
+    font-size: 14px;
+    color: #999;
+    padding:5px 0 5px 25px;
+}
+.detail_product .order_discount div{
+    font-size: 12px;
+    color: #333;
+    padding:5px 0 15px 0;
+    line-height: 25px;
+}
+
+.detail_product .item_yuding h3{
+    background: url("../../images/txt5.png") 0 center no-repeat;
+    background-size: 18px 16px;
+}
+
+.detail_product .item_tips h3{
+    background: url("../../images/txt2.png") 0 center no-repeat;
+    background-size: 18px 16px;
+}
+.detail_product .order_discount div strong{
+    font-weight:bold;
+}
+
